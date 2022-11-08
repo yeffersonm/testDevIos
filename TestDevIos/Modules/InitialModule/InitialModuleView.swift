@@ -67,8 +67,6 @@ extension InitialModuleView: UITableViewDelegate, UITableViewDataSource {
 extension InitialModuleView: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         self.showLoader()
-        print("LETRA")
-        print(searchText)
         presenter?.searchString(char: searchText, data: listPosts)
     }
     

@@ -19,7 +19,7 @@ enum caseApi {
     var path:String {
         switch self {
         case .listPost:
-            return constants.resourceApi.mainUrl + "/public/"
+            return constants.resourceApi.mainUrl + "/public/v1/posts"
         }
     }
 }

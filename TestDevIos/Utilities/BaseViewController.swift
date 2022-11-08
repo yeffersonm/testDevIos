@@ -28,7 +28,7 @@ class BaseViewController: UIViewController, Storyboarded {
         monitor.start(queue: queue)
         monitor.pathUpdateHandler = { path in
             if path.status == .unsatisfied {
-                DispatchQueue.main.sync { [] in
+                DispatchQueue.main.async { [] in
                     self.addBaseAlert(type: .network)
                 }
             }
